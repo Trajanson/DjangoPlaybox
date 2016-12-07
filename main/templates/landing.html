@@ -24,10 +24,44 @@
 
   <div id="comments">
     <h3><u>Comments</u></h3>
-    <form>
+    <form id="comment-form">
+      {% csrf_token %}
       <textarea form ="testformid" name="taname" id="taid" cols="100" wrap="soft"></textarea>
       <input type="submit" value="Submit">
     </form>
+
+    <div id="list-of-comments">
+      <script>var numberOfComments = 0;</script>
+    {% for comment in comments %}
+      <p>{{ forloop.counter }}) {{ comment.text }}</p>
+      <script>numberOfComments += 1;</script>
+    {% endfor %}
+    </div>
+    <script>
+      $('#comment-form').on('submit', function(event) {
+        event.preventDefault();
+        var element = $(this),
+            newText = $('#taid').val();
+
+
+
+        $.ajax({
+          url: '/comment/',
+          type: "POST",
+          data: {
+            'csrfmiddlewaretoken': '{{ csrf_token }}',
+            'text': newText
+          },
+          success: function(response) {
+            $('#taid').val("");
+            numberOfComments += 1;
+            $( "#list-of-comments" ).append( $(
+              `<p>${numberOfComments}) ${newText}</p>`
+             ) );
+          }
+        })
+      })
+    </script>
   </div>
 
 
