@@ -1,0 +1,110 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+<meta http-equiv="content-type" content="text/html" charset="ISO-8859-1" />
+<title>Django!</title>
+  <link rel="icon" href="{% static "images/logo.png" %}">
+  <link rel="stylesheet" type="text/css" href="{% static 'css/home_style.css' %}" />
+  <script src="{% static "js/jQuery.js" %}"></script>
+  <script src="{% static "js/jQueryUI.js" %}"></script>
+</head>
+
+<body>
+  <div id='backdrop'></div>
+
+  <div id='sidebar'>
+    <div id='sticker'>
+      <img src="{% static "images/sticker.png" %}" />
+    </div>
+
+    <div id='menu'>
+      <p>
+        <a href="/" id='MeetMeMenu'>Meet Julian</a>
+      </p>
+      <p>
+        <a href="http://trajanson.com/" id='AllProjectsMenu'>Portfolio Page</a>
+      </p>
+      <p>
+        <a href="http://www.jounce.se/" id='PortfolioPageMenu'>
+          &nbsp;&nbsp;&nbsp;&nbsp;Jounce Streaming
+          &nbsp;&nbsp;&nbsp;&nbsp;Music Radio
+        </a>
+      </p>
+      <p>
+        <a href="https://github.com/Trajanson" id='GithubMenu'>
+          &nbsp;&nbsp;&nbsp;&nbsp;Github
+        </a>
+      </p>
+      <p>
+        <a href="https://www.linkedin.com/in/trajanson" id='LinkedInMenu'>
+          &nbsp;&nbsp;&nbsp;&nbsp;LinkedIn
+        </a>
+      </p>
+      <p>
+        <a href="https://angel.co/trajanson" id='AngelListMenu'>
+          &nbsp;&nbsp;&nbsp;&nbsp;AngelList
+        </a>
+      </p>
+      <!-- <p>
+        <a href="#" id='RailsProjectsMenu'>
+          &nbsp;&nbsp;&nbsp;&nbsp;Rails Projects
+        </a>
+      </p> -->
+      <!-- <p>
+        <a href="#" id='JavaScriptProjectsMenu'>
+          &nbsp;&nbsp;&nbsp;&nbsp;JavaScript Projects
+        </a>
+      </p> -->
+    </div>
+
+    <div id= 'translations'>
+      <img src="{% static 'images/FlagUS.png' %}" id="englishFlag" class="translationFlag" alt="Read in English" title="Read in English" />
+      <img src="{% static 'images/FlagSV.png' %}" id="swedishFlag" class="translationFlag" alt="Läser på svenska" title="Läser på svenska" />
+    </div>
+
+    <div id='sideBinding'></div>
+  </div>
+
+  <div id="content">
+    {% block content %}
+    {% endblock %}
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <div id="no-javascript" class='errorMessage'>
+    <h3>Please enable JavaScript to view this webpage.</h3><br/><br/>
+    This page can help you to enable JavaScript on your device: <a target="_blank" href='http://www.enable-javascript.com/'>http://www.enable-javascript.com/</a>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+  <script src="{% static "js/main.js" %}"></script>
+</body>
+</html>

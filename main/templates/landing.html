@@ -1,1 +1,58 @@
-<p>Test Homepage</p>
+{% extends 'standard_layout.html' %}
+{% load staticfiles %}
+
+{% block content %}
+
+    <canvas id="canvas1"  width="400" height="400" style="border:1px solid #000000;"></canvas>
+
+    <div id='hey' class='positionedText'>Hey!!</div>
+
+    <div id ='meet' class='positionedText'>Meet Julian!</div>
+
+
+
+    <div id ='heLivesHere' class='positionedText'>He Lives Here!</div>
+
+
+  <div id='googleMapFrame'>
+    <div id="googleMap" style="width:300px;height:150px;"></div>
+  </div>
+
+  <div id='oneDay'  class='positionedText'>
+    <span id='andOneDayInOneDay'>And he is definitely </span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; <br><span id='hesGoingToBeInOneDay'>going to be a </span><span id='oneDayTotally'>totally</span> <span id='oneDayKickass'>kickass</span> <u><span id='webDeveloperInOneDay'>Django developer</span></u>!
+  </div>
+
+  <div id="comments">
+    <h3><u>Comments</u></h3>
+    <form>
+      <textarea form ="testformid" name="taname" id="taid" cols="100" wrap="soft"></textarea>
+      <input type="submit" value="Submit">
+    </form>
+  </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+      var googleIconMarkerPath = "{% static "images/SelfPortraitImage.png" %}"
+    </script>
+
+
+      <script src="{% static "js/processing.js" %}"></script>
+      <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBtcRXikDrhKBF-WSCTeP1VNy_uTgKXT-M&callback=initMap" defer></script>
+      <script src="{% static "js/meeting.js" %}" defer></script>
+
+
+{% endblock %}

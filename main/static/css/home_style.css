@@ -1,0 +1,362 @@
+@font-face {
+    font-family: fromWhere;
+    src: url(../fonts/FromWhereYouAre.ttf);
+}
+
+@font-face {
+    font-family: avengers;
+    src: url(../fonts/AVENGEANCEHEROICAVENGER.ttf);
+}
+
+
+
+
+
+
+
+
+
+
+body {
+  overflow-x: hidden;
+}
+
+.errorMessage {
+    background-color: white;
+    min-width: 100%;
+    min-height: 100%;
+    position: absolute;
+    top: 0%;
+    left: 0%;
+    position: fixed;
+}
+
+
+#sidebar {
+  position: fixed;
+  min-width: 20%;
+  max-width: 20%;
+
+  min-height: 100%;
+  max-height: 100%;
+
+  left: 0%;
+  top: 0%;
+
+
+
+  border-radius: 0px 20px 20px 0px;
+	background-image: url(../images/leather.svg);
+
+	color: white;
+
+}
+
+#sideBinding {
+  position: absolute;
+  min-width: 20%;
+  max-width: 20%;
+
+  min-height: 100%;
+  max-height: 100%;
+
+  left: 80%;
+  top: 0%;
+  border-radius: 0px 20px 20px 0px;
+
+	background-image: url(../images/brownLeather.svg);
+  border-style: solid;
+  border-left-style: dashed;
+  border-left-color: rgba(0,0,0,.5);
+  border-width: 1px 1px 1px 5px;
+
+   -moz-box-sizing:    border-box;
+   -webkit-box-sizing: border-box;
+    box-sizing:        border-box;
+}
+
+
+
+#backdrop {
+  position: fixed;
+  height: 100%;
+  min-height: 100%;
+  min-width: 100%;
+  max-width: 100%;
+  top: 0%;
+  left: 0%;
+  background-repeat: repeat;
+
+	background-image: url(../images/paper.svg);
+  -webkit-background-size: auto, cover;
+
+  -moz-background-size: auto, cover;
+
+  -o-background-size: auto, cover;
+
+  background-size: auto, cover;
+  background-attachment: fixed;
+
+
+
+
+}
+
+#sticker {
+    width: 35%;
+    max-width: 35%;
+    min-width: 35%;
+}
+
+
+#sticker img {
+    width:     100%;
+    max-width: 100%;
+    min-width: 100%;
+}
+
+
+#menu {
+    font-family: fromWhere;
+    font-size: 1vw;
+    position: absolute;
+    top: 25%;
+    width: 80%;
+    max-width: 80%;
+    min-width: 80%;
+    left: 5%;
+}
+
+#menu a:link {
+    color: white;
+    text-decoration: none;
+}
+
+
+#menu a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+#menu a:hover {
+    color: #FA8282;
+    text-decoration: none;
+}
+
+#menu a:active {
+    color: white;
+    text-decoration: none;
+}
+
+#translations {
+    position: absolute;
+    max-height: 100%;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    bottom: 0%;
+    left: 17.5%;
+}
+
+.translationFlag {
+  display: inline-block;
+  width: 25%;
+  max-width: 25%;
+  min-width: 25%;
+  cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+#content {
+  position: absolute;
+  left: 20%;
+  top: 5%;
+  min-width: 80%;
+  max-width: 80%;
+
+  min-height: 100%;
+
+  padding-left: 4%;
+
+  font: 1.2em/1.6em Montserrat;
+  color: #222222;
+
+  font-family: fromWhere;
+}
+
+
+
+
+
+
+
+
+
+.imageContainer {
+  background-color: black;
+  overflow: hidden;
+
+
+
+  min-width: 400px;
+  max-width: 400px;
+
+  max-height: 200px;
+  min-height: 200px;
+
+}
+
+
+
+canvas {
+
+  position: absolute;
+  top: 0%;
+  left: 0%;
+
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  border: none !important;
+
+
+/*
+  min-height: 100%;
+  max-height: 100%;
+
+  min-width: 100%;
+  max-width: 100%;
+*/
+}
+
+
+#googleMapFrame {
+  position: absolute;
+  top: 3%;
+  right: 15%;
+}
+
+#googleMap {
+    display: table;
+    margin: 0 auto;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.positionedText {
+  position: absolute;
+}
+
+#hey {
+  font-size: 5.3vw;
+  top: 1%;
+  left: 1%;
+}
+
+#meet {
+  font-size: 3.0vw;
+}
+
+#heLivesHere {
+    font-size: 3.0vw;
+    top: 314px;
+    left: 57%;
+}
+
+#oneDay {
+  text-align: center;
+}
+
+#biographicalText {
+  line-height: 178%;
+}
+
+HR {
+    border-bottom: 8px;
+    border-bottom-style: double;
+    border-bottom-color: black;
+    width: 75%;
+}
+
+
+.avenged {
+    font-family: avengers;
+    font-size: 150%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.projectTitle {
+  padding-top: 0px;
+  margin-top: 0px;
+}
+
+.projectShowcases {
+  margin-top: 2%;
+  margin-right: 3%;
+}
+
+.projectDescription {
+    line-height: 100%;
+    margin-right: 3%;
+}
+
+.projectEnglishText {
+}
+
+.projectSwedishText {
+  display: none;
+}
+
+
+
+#comments{
+  top: 70%;
+  position: absolute;
+}
