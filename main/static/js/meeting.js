@@ -852,11 +852,11 @@ function setPageContentToEnglish() {
   $('#meet').html("Meet Julian!");
   $('#heLivesHere').html("He Lives Here!");
 
-  $('#andOneDayInOneDay').html("And one day,");
-  $('#hesGoingToBeInOneDay').html("he's going to be a ");
+  $('#andOneDayInOneDay').html("And he is definitely");
+  $('#hesGoingToBeInOneDay').html("going to be a ");
   $('#oneDayTotally').html("totally");
   $('#oneDayKickass').html("kickass");
-  $('#webDeveloperInOneDay').html("web developer");
+  $('#webDeveloperInOneDay').html("Django developer");
 
   $('#sendMeToAppAcademyButton').html("<b>Send Julian<br/>to Work<b>");
 }
@@ -868,11 +868,11 @@ function setPageContentToSvenska() {
   $('#meet').html("Träffa Julian!");
   $('#heLivesHere').html("Han Bor Här!");
 
-  $('#andOneDayInOneDay').html("Och en dag,");
+  $('#andOneDayInOneDay').html("Och han är definitivt");
   $('#hesGoingToBeInOneDay').html("han <b>ska</b> bli en ");
   $('#oneDayTotally').html("totalt");
   $('#oneDayKickass').html("kickass");
-  $('#webDeveloperInOneDay').html("webbutvecklare");
+  $('#webDeveloperInOneDay').html("Django webbutvecklare");
 
   $('#sendMeToAppAcademyButton').html("<b>Skicka Julian<br/>till Work<b>");
 }
